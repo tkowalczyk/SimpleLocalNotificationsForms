@@ -17,7 +17,7 @@ namespace SimpleLocalNotificationsForms.Droid
 		public void SendLocalNotification (string title, string description, int iconID)
 		{
 			// Instantiate the builder and set notification elements:
-			Notification.Builder builder = new Notification.Builder (this)
+			Notification.Builder builder = new Notification.Builder (Application.Context)
 				.SetContentTitle (title)
 				.SetContentText (description)
 				.SetSmallIcon (Resource.Drawable.icon);
